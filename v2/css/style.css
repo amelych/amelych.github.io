@@ -71,12 +71,12 @@ p {
 
 label, input {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-left: 15px;
 }
 
 video {
-    width: 80%;
+    width: 70%;
 }
 
 video, iframe {
@@ -85,7 +85,7 @@ video, iframe {
 }
 
 iframe {
-    width: 35%;
+    width: 45%;
     height: 315px;
 }
 
@@ -113,8 +113,12 @@ tr {
     padding: 5px;
 }
 
+td {
+    transition: 1.5s;
+}
+
 td:hover {
-    background-color: #7ca5b8;
+    background: linear-gradient(0deg, rgba(171,200,192,1) 46%, rgba(124,165,184,1) 91%);
     transform: scale(1.1);
     transition: 1s;
 }
@@ -132,7 +136,7 @@ footer a {
 }
 
 .menu {
-    width: 100%;
+    width: 100vw;
     padding-top: 5px;
     background-color: #254E70;
 }
@@ -188,11 +192,13 @@ a:hover {
 
 .galeria img{
     width: 42%;
+    transition: 1s;
 }
 
 .galeria img:hover {
     transform: scale(1.1);
     transition: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .personajes img {
@@ -212,20 +218,23 @@ a:hover {
 
 .same {
     position: relative;
+    align-items: center;
 }
 
 .formulario {
     padding: 5px;
     float: left;
-    width: 40%;
-    margin-left: auto;
+    width: 30%;
+    margin: auto;
 }
 
 .formulario textarea{
+    padding: 10px;
     vertical-align: middle;
 }
 
 .datos {
     float: right;
-    width: 50%;
+    width: 40%;
+    margin: auto;
 }
