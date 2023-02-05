@@ -70,9 +70,9 @@ p {
 }
 
 label, input {
-    font-family: monospace;
-    font-size: 1.3rem;
-    margin-left: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    margin-left: 20px;
 }
 
 video {
@@ -176,7 +176,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    
 }
 
 #boton {
@@ -212,13 +211,16 @@ a:hover {
     width: 100%;
 }
 
-.streaming {
-    margin: auto;
+.enlaces a:link {
+    color: #0D3B66;
 }
 
-.same {
-    position: relative;
-    align-items: center;
+.enlaces a:visited {
+    color: #6D8EA0;
+}
+
+.streaming {
+    margin: auto;
 }
 
 .formulario {
