@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Don't Worry Darling</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="menu">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#director">Director</a></li>
@@ -23,7 +24,7 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <section class="main">
       <h1>No te preocupes, querida</h1>
       <article>
         <h2 id="inicio">Inicio</h2>
@@ -50,7 +51,7 @@
           incluso interpreta un papel en esta película.
         </p>
       </article>
-      <article>
+      <article class="personajes">
         <h2 id="personajes">Personajes</h2>
         <h3>Alice Warren</h3>
         <p>
@@ -86,9 +87,9 @@
         </p>
         <img src="img/personajes/bunny.jpg" alt="Imagen de Bunny">
       </article>
-      <article>
+      <article class="streaming">
         <h2 id="plataformas">Plataformas de Streaming</h2>
-        <table border="1">
+        <table>
           <tr>
             <th>Plataforma</th>
             <th>¿Se puede ver?</th>
@@ -136,104 +137,104 @@
       </article>
       <article>
         <h2 id="media">Media</h2>
-        <img
-          src="img/media/media1.jpg"
-          alt="Imagen donde aparecen Alice y Jack"
-        >
-        <img
-          src="img/media/media2.jpg"
-          alt="Imagen de las amas de casa en clase de ballet"
-        >
-        <img
-          src="img/media/media3.jpg"
-          alt="Imagen donde aparecen Alice y Bunny"
-        >
-        <img
-          src="img/media/media4.jpg"
-          alt="Imagen donde aparecen Bunny y Frank"
-        >
-        <img
-          src="img/media/media5.jpg"
-          alt="Imagen donde aparece Frank dando un discurso"
-        >
+        <div class="galeria">
+            <img
+              src="img/media/media1.jpg"
+              alt="Imagen donde aparecen Alice y Jack"
+            >
+            <img
+              src="img/media/media2.jpg"
+              alt="Imagen de las amas de casa en clase de ballet"
+            >
+            <img
+              src="img/media/media3.jpg"
+              alt="Imagen donde aparecen Alice y Bunny"
+            >
+            <img
+              src="img/media/media4.jpg"
+              alt="Imagen donde aparecen Bunny y Frank"
+            />
+            <img
+              src="img/media/media5.jpg"
+              alt="Imagen donde aparece Frank dando un discurso"
+            >
+        </div>
+
         <h3>Un vídeo recomendando la película.</h3>
         <video width="560" controls>
-          <source src="video/DontWorryDarling.webm" type="video/webm">
+          <source src="video/DontWorryDarling.webm" type="video/webm" >
         </video>
         <h3>El trailer de la película</h3>
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/FgmnKsED-jU"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </article>
-      <article>
-        <h2 id="opinion">Cuentanos tu opinión</h2>
-        <form>
-          <div>
-            <label for="usuario">Usuario</label>
-            <input
-              type="text"
-              id="usuario"
-              name="usuario"
-              placeholder="Escriba su usuario"
-            >
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Escriba su email" >
-          </div>
-          <div>
-            <label for="puntuacion">Puntuación</label>
-            <select id="puntuacion" name="puntuacion">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-          <div>
-            <label for="spoiler">¿Tiene algún spoiler tu opinión?</label>
-            <input type="checkbox" id="spoiler" name="spoiler" >
-          </div>
-          <div>
-            <label for="opinionEscrita">Opinión</label>
-            <textarea name="opinionEscrita" id="opinionEscrita"></textarea>
-          </div>
-          <div>
-            <p>¿La recomendarías a tus amigos?</p>
-            <input type="radio" id="yes" name="recomendar" >
-            <label for="yes">Sí</label>
-            <input type="radio" id="no" name="recomendar" >
-            <label for="no">No</label>
-            <input type="radio" id="maybe" name="recomendar" >
-            <label for="maybe">Tal vez</label>
-          </div>
-          <div>
-            <input type="image" src="img/boton.png" id="boton" alt="boton entrega">
-          </div>
-        </form>
-      </article>
-      <article>
-        <h2 id="facts">Datos curiosos</h2>
-        <ol>
-          <li>Olivia Wilde y Harry Styles empezaron a salir en pleno rodaje e intentaron que fuera un secreto. Comenzaron a salir 2 meses desde que empezó la grabación.</li>
-          <li>¿Hubo una disputa entre Florence Pugh y Olivia Wilde? Aunque no se han confirmado públicamente, los rumores sobre la disputa entre la actriz Florence Pugh y Olivia Wilde son numerosos. Una de las teorías sugiere que Pugh no estaba contenta con que Wilde empezara a salir con su compañero de reparto Harry Styles mientras estaba en el plató y aún casada con su ahora ex marido Jason Sudeikis, amigo de Pugh.</li>
-          <li>¿Escupió Harry Styles a Chris Pine? Una de las polémicas más conocidas que rondan esta película es si Harry Styles escupió sobre su compañero Chris Pine cuando se sentó a su lado, los usuarios de Twitter tras ver el vídeo hicieron sus teorías y la mayoría afirma que sí le escupió.</li>
-          <li>¿Salario injusto para Florence Pugh? Durante las grabaciones surgió el rumor de que la actriz Florence Pugh no estaba contenta con las condiciones de salario en la película, según el rumor ella cobraría unos 700 mil dólares mientras que su compañero Harry Styles cobraría 1.5 millones. Olivia Wilde negó estos rumores aclamando que eran clickbait.</li>
-          </ol>
-      </article>
-      <article>
+        <article class="formulario">
+          <h2 id="opinion">Cuentanos tu opinión</h2>
+          <form>
+            <div>
+              <label for="usuario">Usuario</label>
+              <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Escriba su usuario"
+              >
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Escriba su email">
+            </div>
+            <div>
+              <label for="puntuacion">Puntuación</label>
+              <select id="puntuacion" name="puntuacion">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div>
+              <label for="spoiler">¿Tiene algún spoiler tu opinión?</label>
+              <input type="checkbox" id="spoiler" name="spoiler">
+            </div>
+            <div>
+              <label for="opinionEscrita">Opinión</label>
+              <textarea name="opinionEscrita" id="opinionEscrita"></textarea>
+            </div>
+            <div>
+              <p>¿La recomendarías a tus amigos?</p>
+              <input type="radio" id="yes" name="recomendar">
+              <label for="yes">Sí</label>
+              <input type="radio" id="no" name="recomendar">
+              <label for="no">No</label>
+              <input type="radio" id="maybe" name="recomendar">
+              <label for="maybe">Tal vez</label>
+            </div>
+            <div>
+              <input type="image" src="img/boton.png" id="boton" alt="boton entrega">
+            </div>
+          </form>
+        </article>
+        <article class="datos">
+          <h2 id="facts">Datos curiosos</h2>
+          <ol>
+            <li>Olivia Wilde y Harry Styles empezaron a salir en pleno rodaje e intentaron que fuera un secreto. Comenzaron a salir 2 meses desde que empezó la grabación.</li>
+            <li>¿Hubo una disputa entre Florence Pugh y Olivia Wilde? Aunque no se han confirmado públicamente, los rumores sobre la disputa entre la actriz Florence Pugh y Olivia Wilde son numerosos. Una de las teorías sugiere que Pugh no estaba contenta con que Wilde empezara a salir con su compañero de reparto Harry Styles mientras estaba en el plató y aún casada con su ahora ex marido Jason Sudeikis, amigo de Pugh.</li>
+            <li>¿Escupió Harry Styles a Chris Pine? Una de las polémicas más conocidas que rondan esta película es si Harry Styles escupió sobre su compañero Chris Pine cuando se sentó a su lado, los usuarios de Twitter tras ver el vídeo hicieron sus teorías y la mayoría afirma que sí le escupió.</li>
+            <li>¿Salario injusto para Florence Pugh? Durante las grabaciones surgió el rumor de que la actriz Florence Pugh no estaba contenta con las condiciones de salario en la película, según el rumor ella cobraría unos 700 mil dólares mientras que su compañero Harry Styles cobraría 1.5 millones. Olivia Wilde negó estos rumores aclamando que eran clickbait.</li>
+            </ol>
+        </article>
+      <article class="enlaces">
         <h2 id="links">Links</h2>
         <p>
           Para saber más información sobre la película, la página de
