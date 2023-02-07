@@ -1313,6 +1313,7 @@ iframe {
 			}
 
 			table.default th {
+				vertical-align: middle;
 				text-align: center;
 				font-weight: 900;
 				border: solid 2px;
