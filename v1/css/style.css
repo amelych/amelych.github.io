@@ -19,7 +19,6 @@ section {
 
 header {
     display: flex;
-    height: 50px;
     background-color: #254E70;
 }
 
@@ -61,6 +60,7 @@ li {
     font-family: 'Quicksand', sans-serif;
     text-align: justify;
 }
+
 
 p {
     font-family: 'Quicksand', sans-serif;
@@ -136,26 +136,28 @@ footer a {
 }
 
 .menu {
-    width: 100vw;
+    width: 100%;
     padding-top: 5px;
     background-color: #254E70;
 }
 
-.menu ul {
+nav ul {
     list-style: none;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
-.menu li {
+nav li {
     list-style:none;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .menu a {
     color: #FBFFF1;
 }
+
 
 a {
     text-decoration: none;
@@ -189,15 +191,29 @@ a:hover {
     align-content: center;
 }
 
+@media screen and (max-width: 992px) {
+    .galeria img  {
+        width: 42%;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .galeria img  {
+        width: 42%;
+        transition: 1s;
+    }
+}
+
 .galeria img{
     width: 42%;
     transition: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .galeria img:hover {
     transform: scale(1.1);
     transition: 1s;
-    transition-timing-function: ease-in-out;
 }
 
 .personajes img {
