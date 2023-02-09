@@ -18,7 +18,6 @@ section {
 }
 
 header {
-    display: flex;
     background-color: #254E70;
 }
 
@@ -36,12 +35,12 @@ h1 {
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 35% }
+    to { width: 42% }
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #C33C54; }
+    42% { border-color: #C33C54; }
 }
 
 h2{
@@ -137,7 +136,6 @@ footer a {
 
 .menu {
     width: 100%;
-    padding-top: 5px;
     background-color: #254E70;
 }
 
@@ -185,23 +183,19 @@ a:hover {
     height: 2rem;
 }
 
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-@media screen and (max-width: 992px) {
-    .galeria img  {
-        width: 42%;
-        transition: 1s;
+@media screen and (max-width: 62em) {
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
     }
 }
 
-@media screen and (min-width: 300px) {
-    .galeria img  {
-        width: 42%;
-        transition: 1s;
+@media screen and (min-width: 15em) {
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
     }
 }
 
@@ -216,11 +210,26 @@ a:hover {
     transition: 1s;
 }
 
-.personajes img {
-    display: block;
-    width: 414px;
-    height:auto;
-    justify-content: center;
+.personajes {
+    width: 100%;
+}
+
+@media screen and (max-width: 62em) {
+    .personajes img {
+        display: block;
+        height:auto;
+        width: 15em;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 15em) {
+    .personajes img {
+        display: block;
+        height:auto;
+        width: 26em;
+        justify-content: center;
+    }
 }
 
 .enlaces {
@@ -242,7 +251,6 @@ a:hover {
 .formulario {
     padding: 5px;
     float: left;
-    width: 30%;
     margin: auto;
 }
 

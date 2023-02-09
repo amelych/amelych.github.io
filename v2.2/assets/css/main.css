@@ -768,7 +768,7 @@ iframe {
 			input[type="reset"].style2.down,
 			.button.style2.down,
 			button.style2.down {
-				background-image: url("images/arrow.svg");
+				background-image: url("images/dark-arrow.svg");
 			}
 
 			
