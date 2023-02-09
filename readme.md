@@ -4,8 +4,9 @@
 - [Versión HTML con CSS](https://amelych.github.io/v1/index.html)
 - [Plantilla sin modificar](https://amelych.github.io/v2.1/index.html)
 - [Versión con plantilla modificada](https://amelych.github.io/v2.2/index.html)
-- [Versión con tailwind](https://amelych.github.io/tailwind/index.html)
-> La versión de Tailwind no está acabada
+- [Versión con tailwind (no está acabada)](https://amelych.github.io/tailwind/index.html)
+
+
 ### Lista de todos los elementos css que uso en la versión 1:
 1. margin
 2. background-color
