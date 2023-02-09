@@ -2,7 +2,10 @@
 
 - [Versión HTML sin CSS](https://amelych.github.io/v0/index.html)
 - [Versión HTML con CSS](https://amelych.github.io/v1/index.html)
-### Lista de todos los elementos css que uso:
+- [Versión con plantilla sin modificar](https://amelych.github.io/v2.1/index.html)
+- [Versión con plantilla modificada](https://amelych.github.io/v2.2/index.html)
+- [Versión con tailwind](https://amelych.github.io/v3/index.html)
+### Lista de todos los elementos css que uso en la versión 1:
 1. margin
 2. background-color
 3. font-family
@@ -31,4 +34,4 @@
 26. flex-wrap
 27. float
 28. vertical-align
-- [Versión con plantilla](https://amelych.github.io/v2.2/index.html)
+
